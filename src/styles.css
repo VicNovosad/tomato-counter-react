@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+body{
+  margin: 0;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("background2.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+}
+
+.window {
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 80%;
+  min-width: 500px;
+  height: 80%;
+  min-height: 400px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 40px 0;
+  box-sizing: border-box;
+  color: #06cfa4;
+  color: #029797;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1024px;
+}
+
+.tomato-box {
+  display: flex;
+  border-radius: 10%;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px 0;
+}
+
+.tomato-box h1 {
+  margin: 0;
+  padding-left: 15px;
+  text-align: left;
+  width: 100%;
+  transition: all .4s ease-out;
+}
+
+.tomato-box > h3 {
+  width: 10%;
+  transition: all .4s ease-out;
+  text-shadow: 0 2px 4px rgba(44, 62, 80, .25);
+}
+
+.tomato-day-box {
+  display: flex;
+  border-radius: 10px;
+  width: 80%;
+  height: 60px;
+  justify-content: center;
+  border: 1px solid #029797;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+  transition: all .2s ease-out;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.buttons-container {
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.button {
+  /* background: #bbcded; */
+  color: #25b99a;
+  border: 2px solid #25b99a;
+  border-radius: 20px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  transition: 0.1s ease all;
+  box-shadow: 0 2px 4px rgba(44, 62, 80, 0.15);
+}
+
+.button:hover {
+  opacity: .8;
+  color: #06cfa4;
+  border: 2px solid #06cfa4;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.button:active{
+  box-shadow: 0 2px rgba(44, 62, 80, 0.15);
+  transform: translateY(2px);
+  color: #e85656;
+  transition: .1s ease all;
+}
+
+.button::selection{
+  background-color: transparent;
+}
